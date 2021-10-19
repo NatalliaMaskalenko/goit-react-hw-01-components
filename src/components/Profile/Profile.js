@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import s from'./Profile.module.css';
 
 export default function Profile({ name, tag, location, avatar, followers, views, likes }) {
-    return (<div className="profile">
+    return (<div className={s.profile}>
   <div className={s.description}>
     <img
       src={avatar}
