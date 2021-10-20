@@ -3,9 +3,9 @@ import s from'./Statistics.module.css';
 
 import StatisticsItem from "./StatisticsItem";
 
-export default function Statistics({title = 'Upload stats', stats}) {
+export default function Statistics({title, stats}) {
     return (<section className={s.statistics}>
-        <h2 className={s.title}>{title}</h2>
+         {title && <h2 slassName={s.title}>{title}</h2>}
         <ul className={s.statList}>
             {stats.map(el => (
                 <StatisticsItem

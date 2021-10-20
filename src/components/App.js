@@ -21,9 +21,9 @@ export default function App() {
             followers={user.stats.followers}
             views={user.stats.views}
             likes={user.stats.likes}
-        />,
-        <Statistics stats={statisticalData} />,
-        <FriendList friends={friends} />,
+        />
+        <Statistics stats={statisticalData} />
+        <FriendList friends={friends} />
         <Transactions transactions={transactions}/>
     </div>
 };
